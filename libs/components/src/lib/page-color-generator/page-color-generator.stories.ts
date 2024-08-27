@@ -33,9 +33,4 @@ const meta: Meta<PageColorGeneratorComponent> = {
 export default meta;
 
 export const Default = {};
-export const Okay = {
-  args: {
-    count: 1,
-    hint: 'Okay',
-  },
-};
+

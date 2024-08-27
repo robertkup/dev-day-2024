@@ -23,16 +23,15 @@ export class PageColorGeneratorComponent extends LitElement {
 
         <div class="color-preview">
           <div class="header" style="background:${this.header}">
-            <h1>Header</h1>
+            <h2>Header: ${this.header}</h2>
           </div>
           <div class="content" style="background:${this.content}">
-            <p>
-              This is a sample content area where the main text of your website would
-              would be displayed.
-            </p>
+            <h2>
+             Content: ${this.content}
+            </h2>
           </div>
           <div class="footer" style="background:${this.footer}">
-            <p>Footer</p>
+            <h3>Footer: ${this.footer}</h3>
           </div>
         </div>
       </div>
