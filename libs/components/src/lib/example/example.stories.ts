@@ -31,3 +31,9 @@ const meta: Meta<ExampleComponent> = {
 export default meta;
 
 export const Default = {};
+export const Okay = {
+  args: {
+    count: 1,
+    hint: 'Okay',
+  },
+};
