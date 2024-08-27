@@ -7,43 +7,43 @@ export const styles = [
       margin: 0 auto;
       padding: 2rem;
       text-align: center;
+
+      display: flex;
+      gap: var(--spectrum-global-dimension-size-200);
+      margin-bottom: var(--spectrum-global-dimension-size-200);
     }
 
-    .card {
-      padding: 2em;
+    .combined {
+      flex-shrink: 0;
+      display: grid;
+      place-content: center center;
+      grid-template-areas: main;
     }
-
-    .hint {
-      color: #888;
+    sp-color-wheel {
+      width: 300px;
+      height: 300px;
+      grid-area: main;
     }
-
-    button {
-      color: white;
-      border-radius: 8px;
-      border: 1px solid transparent;
-      padding: 0.6em 1.2em;
-      font-size: 1em;
-      font-weight: 500;
-      font-family: inherit;
-      background-color: #1a1a1a;
-      cursor: pointer;
-      transition: border-color 0.25s;
+    sp-color-area {
+      grid-area: main;
+      z-index: 1;
+      margin: auto;
+      width: 160px;
+      height: 160px;
     }
-
-    button:hover {
-      border-color: #646cff;
+    .color {
+      display: flex;
+      flex-direction: column;
+      gap: var(--spectrum-global-dimension-size-200);
     }
-
-    button:focus,
-    button:focus-visible {
-      outline: 4px auto -webkit-focus-ring-color;
+    .color > div {
+      text-align: center;
+      width: 75px;
     }
-
-    @media (prefers-color-scheme: light) {
-      button {
-        background-color: #f9f9f9;
-        color: black;
-      }
+    .output {
+      border: 1px solid;
+      padding: var(--spectrum-global-dimension-size-50);
+      align-self: flex-start;
     }
   `,
 ];

@@ -1,0 +1,55 @@
+.color-generator {
+  text-align: center;
+  padding: 20px;
+}
+
+.color-display {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*v2*/
+.color-generator {
+  text-align: center;
+  padding: 20px;
+}
+
+.color-preview {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header, .footer {
+  color: white;
+  padding: 20px;
+}
+
+.header {
+  font-size: 24px;
+}
+
+.content {
+  color: #333;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+.footer {
+  font-size: 14px;
+}

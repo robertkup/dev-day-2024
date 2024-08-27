@@ -1,0 +1,19 @@
+<div class="color-generator">
+  <h2>Website Color Generator</h2>
+  <button (click)="generateColors()">Generate Website Colors</button>
+
+  <div class="color-preview">
+    <div class="header" [style.background]="colors.header">
+      <h1>Website Header</h1>
+    </div>
+    <div class="content" [style.background]="colors.content">
+      <p>
+        This is a sample content area where the main text of your website would
+        be displayed.
+      </p>
+    </div>
+    <div class="footer" [style.background]="colors.footer">
+      <p>Website Footer</p>
+    </div>
+  </div>
+</div>
