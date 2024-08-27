@@ -8,24 +8,16 @@ const meta: Meta<ColorWheelComponent> = {
   title: 'Color Wheel Component',
   component: component.tagName,
   argTypes: {
-    hint: {
+    label: {
       control: 'text',
       description: 'hint text',
     },
-    count: {
-      control: 'number',
-      description: 'start value',
-      defaultValue: {
-        summary: 0,
-      },
-    },
   },
   args: {
-    hint: 'Some hint',
-    count: 0,
+    label: 'Some hint',
   },
   render: (args: ColorWheelComponent) =>
-    html`<color-wheel-component hint=${args.hint} .count=${args.count} />,`,
+    html`<color-wheel-component label=${args.label} />,`,
 };
 
 export default meta;
