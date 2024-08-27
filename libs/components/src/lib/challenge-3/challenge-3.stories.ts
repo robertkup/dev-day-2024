@@ -29,7 +29,7 @@ const meta: Meta<Challenge3Component> = {
     alert: 'This is an alert message!',
   },
   render: (args: Challenge3Component) =>
-    html`<challenge-3-component alert=${args.alert} .variant=${args.warningType}/>,`,
+    html`<challenge-3-component alert=${args.alert} .warningType=${args.warningType}/>,`,
 };
 
 export default meta;
